@@ -9,6 +9,7 @@ import {NgForm} from "@angular/forms";
 export class AppComponent {
   // @ViewChild(NgForm, { static: true }) signupForm: NgForm;
   @ViewChild('f', { static: true }) signupForm: NgForm; //static tylko wtedy jak nie ma structural directive np. ngIf
+  defaultQuestion = 'pet';
 
   suggestUserName() {
     const suggestedName = 'Superuser';
